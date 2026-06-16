@@ -7,7 +7,7 @@
     "backend"
   ],
   "scripts": {
-    "install:all": "npm install --workspaces",
+    "install:all": "npm install --workspaces --include=dev",
     "dev": "concurrently \"npm run dev --workspace backend\" \"npm run dev --workspace frontend\"",
     "dev:all": "concurrently \"npm run dev --workspace backend\" \"npm run dev --workspace frontend\"",
     "dev:backend": "npm run dev --workspace backend",
